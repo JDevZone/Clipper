@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.jdevzone.clipper.ClipImage
+    <LinearLayout
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        app:ci_clip_gravity="bottom"
-        app:ci_clip_radius="30dp"
-        app:ci_clip_type="pin"
-        app:srcCompat="@color/purple_700" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <com.jdevzone.clipper.ClipImage
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/black_10"
+            app:ci_clip_radius="35dp"
+            app:ci_clip_type="circle"
+            app:ci_corner_radius="10dp"
+            app:ci_horizontal_padding="10dp"
+            app:ci_vertical_padding="10dp"
+            app:srcCompat="@drawable/ic_sample_bg" />
+
+        <com.jdevzone.clipper.ClipImage
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/black_10"
+            app:ci_clip_radius="35dp"
+            app:ci_clip_type="pin"
+            app:ci_corner_radius="10dp"
+            app:ci_horizontal_padding="10dp"
+            app:ci_vertical_padding="10dp"
+            app:srcCompat="@drawable/ic_sample_bg" />
+
+        <com.jdevzone.clipper.ClipImage
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/black_10"
+            app:ci_clip_radius="35dp"
+            app:ci_clip_type="pin"
+            app:ci_clip_gravity="bottom"
+            app:ci_corner_radius="10dp"
+            app:ci_horizontal_padding="10dp"
+            app:ci_vertical_padding="10dp"
+            app:srcCompat="@drawable/gradient_shape" />
+
+        <com.jdevzone.clipper.ClipImage
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/black_10"
+            app:ci_clip_radius="35dp"
+            app:ci_clip_gravity="bottom"
+            app:ci_corner_radius="10dp"
+            app:ci_horizontal_padding="10dp"
+            app:ci_vertical_padding="10dp"
+            app:srcCompat="@color/purple_500" />
+    </LinearLayout>
+
+</ScrollView>
