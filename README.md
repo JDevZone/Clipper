@@ -1,0 +1,2 @@
+# Clipper
+Custom Image Clipper
