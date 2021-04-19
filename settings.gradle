@@ -1,0 +1,3 @@
+include ':clipper'
+include ':app'
+rootProject.name = "Clipper Sample"
