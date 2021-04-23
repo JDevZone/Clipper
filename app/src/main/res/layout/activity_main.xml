@@ -11,12 +11,28 @@
         android:layout_width="match_parent"
         android:orientation="vertical">
 
+
+        <com.jdevzone.clipper.ClipImage
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/black_10"
+            app:ci_clip_gravity="bottom"
+            app:ci_clip_type="circle"
+            app:ci_clip_radius="400dp"
+            app:ci_corner_radius="10dp"
+            app:ci_horizontal_padding="10dp"
+            app:ci_vertical_padding="10dp"
+            app:srcCompat="@drawable/ic_sample_bg" />
+
+
         <com.jdevzone.clipper.ClipImage
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:background="@color/black_10"
-            app:ci_clip_radius="35dp"
+            app:ci_clip_radius="40dp"
             app:ci_clip_type="circle"
             app:ci_corner_radius="10dp"
             app:ci_horizontal_padding="10dp"
@@ -27,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:background="@color/black_10"
             app:ci_clip_radius="35dp"
             app:ci_clip_type="pin"
@@ -39,12 +56,19 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:background="@color/black_10"
+            app:ci_stroke_color="#f00"
+            android:elevation="8dp"
+            app:ci_stroke_type="dashed"
+            app:ci_stroke_width="4dp"
+            app:ci_stroke_path_interval="5dp"
+            app:ci_stroke_path_phase="0dp"
             app:ci_clip_radius="35dp"
             app:ci_clip_type="pin"
             app:ci_clip_gravity="bottom"
             app:ci_corner_radius="10dp"
-            app:ci_horizontal_padding="10dp"
+            app:ci_horizontal_padding="20dp"
             app:ci_vertical_padding="10dp"
             app:srcCompat="@drawable/gradient_shape" />
 
@@ -53,12 +77,27 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:background="@color/black_10"
-            app:ci_clip_radius="35dp"
+            app:ci_clip_radius="45dp"
+            android:layout_marginTop="10dp"
             app:ci_clip_gravity="bottom"
             app:ci_corner_radius="10dp"
             app:ci_horizontal_padding="10dp"
             app:ci_vertical_padding="10dp"
             app:srcCompat="@color/purple_500" />
+
+        <com.jdevzone.clipper.ClipImage
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/black_10"
+            app:ci_clip_gravity="top"
+            app:ci_clip_radius="400dp"
+            app:ci_clip_type="circle"
+            app:ci_corner_radius="10dp"
+            app:ci_horizontal_padding="10dp"
+            app:ci_vertical_padding="10dp"
+            app:srcCompat="@drawable/ic_sample_bg" />
     </LinearLayout>
 
 </ScrollView>

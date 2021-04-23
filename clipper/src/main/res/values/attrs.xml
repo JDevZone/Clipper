@@ -5,9 +5,17 @@
         <attr name="ci_vertical_padding" format="dimension" />
         <attr name="ci_corner_radius" format="dimension" />
         <attr name="ci_clip_radius" format="dimension" />
+        <attr name="ci_stroke_width" format="dimension" />
+        <attr name="ci_stroke_path_interval" format="dimension" />
+        <attr name="ci_stroke_path_phase" format="dimension" />
+        <attr name="ci_stroke_color" format="color" />
         <attr name="ci_clip_type">
             <flag name="circle" value="1" />
             <flag name="pin" value="2" />
+        </attr>
+        <attr name="ci_stroke_type">
+            <flag name="solid" value="11" />
+            <flag name="dashed" value="12" />
         </attr>
         <attr name="ci_clip_gravity">
             <flag name="top" value="0x30" />
